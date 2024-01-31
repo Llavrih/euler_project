@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int multiples_3() {
+int multiples3() {
     int sum = 0;
     for (int i = 0; i < 1000; i++) {
         if (i%3==0){
@@ -11,7 +11,7 @@ int multiples_3() {
     return sum;
 }
 
-int multiples_5() {
+int multiples5() {
     int sum = 0;
     for (int i = 0; i < 1000; i++) {
         if ((i%5==0) && !(i%3==0)){
@@ -23,7 +23,7 @@ int multiples_5() {
 
 int main() {
     int sum = 0;
-    sum = multiples_3() + multiples_5();
+    sum = multiples3() + multiples5();
 
     cout << "Sum = " << sum;    
         
